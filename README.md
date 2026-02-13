@@ -216,3 +216,12 @@
     ---
 
 <hr />
+
+6.  Data save in Mysql - Register Page.
+
+    Repo Link :
+
+    app\Register\page.jsx               => Front End
+    app\Register\Register.action.jsx    => Backend Logic
+
+<hr />

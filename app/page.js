@@ -33,6 +33,23 @@ function Home(props) {
               Cache Example
             </Link>
           </li>
+           <li>
+            <Link
+              href="/Students/01"
+              className="bg-amber-300 px-4 py-2 block"
+            >
+              generateStaticParams
+            </Link>
+          </li>
+          
+           <li>
+            <Link
+              href="/Register"
+              className="bg-amber-300 px-4 py-2 block"
+            >
+              Register Form
+            </Link>
+          </li>
         </ul>
       </nav>
 
