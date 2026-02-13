@@ -25,6 +25,14 @@ function Home(props) {
               Dynamic Page
             </Link>
           </li>
+           <li>
+            <Link
+              href="/CacheDemo"
+              className="bg-amber-300 px-4 py-2 block"
+            >
+              Cache Example
+            </Link>
+          </li>
         </ul>
       </nav>
 

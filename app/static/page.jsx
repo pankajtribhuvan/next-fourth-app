@@ -9,7 +9,7 @@ async function StaticPage(props) {
 
     return (
         <div className='m-6  text-2xl'>
-            <h1 className='mt-3 text-red-400 text-4xl text-center'>Dynamic Page </h1>     
+            <h1 className='mt-3 text-red-400 text-4xl text-center'>Static Page </h1>     
             <h2 className='text-2xl'>Student : {students.length}</h2>
             <hr />
             <ul >
