@@ -57,28 +57,28 @@
 <hr />
 
 3. React Cache - Boost Performance with Cache.
-   <br>
-   Link : <br>
-   app\CacheDemo\page.jsx <br>
+    <br>
+    Link : <br>
+    app\CacheDemo\page.jsx <br>
 
-  Only work on Server Component. <br>
-  Perticularly useful on the server to avoid the repeated data fetching <br>
-  for the same input , specially during  <br>
-  SSR (Server Side Rendering) and React Sever Component (RSC) <br>
+    Only work on Server Component. <br>
+    Perticularly useful on the server to avoid the repeated data fetching <br>
+    for the same input , specially during  <br>
+    SSR (Server Side Rendering) and React Sever Component (RSC) <br>
 
-  --------------------- <br>
+    --------------------- <br>
 
-  Request Memoization (react.cache)	Avoids calling <br> 
-  the same DB query twice on the same page/request.	 <br>
-  One single Page Render <br>
+    Request Memoization (react.cache)	Avoids calling <br> 
+    the same DB query twice on the same page/request.	 <br>
+    One single Page Render <br>
 
-  react.cache is scoped to a single "Server Request" (one page render). <br>
+    react.cache is scoped to a single "Server Request" (one page render). <br>
 
-  When you click a <Link> and move from Home to CacheDemo, <br>
-  Next.js performs a new request to the server  <br>
-  to get the RSC (React Server Component) payload for  <br>
-  that new page. Because it is a new request, the React  <br>
-  cache is completely reset. <br>
+    When you click a <Link> and move from Home to CacheDemo, <br>
+    Next.js performs a new request to the server  <br>
+    to get the RSC (React Server Component) payload for  <br>
+    that new page. Because it is a new request, the React  <br>
+    cache is completely reset. <br>
 
 <hr />
 
