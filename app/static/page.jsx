@@ -1,6 +1,8 @@
 import { db } from '@/config/db';
 import React from 'react';
 
+export const revalidate = 30;
+
 async function StaticPage(props) {
     let [students] = await db.execute("select * from students");
     console.log('Static Students');
