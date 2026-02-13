@@ -220,7 +220,7 @@
 6.  Server Action - Without using events ,states => Data save in Mysql - Register Page.
     
     Server Action - we create new file server action to fetch from client component and save into database.
-    
+
     Repo Link :
 
     app\Register\page.jsx               => Front End
@@ -245,5 +245,27 @@
     await db.execute(`insert into students(name,mobile,city) values(?,?,?)`,[name,mobile,city])
     
     we can't use above mysql queries in frontend - client component.
+
+<hr />
+8. UseActionState React 19 Hook 
+     
+    useActionState हे एक नवीन React Hook आहे जे Server Actions सोबत काम करण्यासाठी डिझाइन केले आहे. हे तुम्हाला एकाच वेळी तीन महत्त्वाच्या गोष्टी पुरवते:
+
+    State: सर्व्हरने पाठवलेला रिस्पॉन्स (उदा. Success/Error message).
+
+    Action: फॉर्मला सबमिट करण्यासाठी लागणारे फंक्शन.
+
+    isPending: डेटाबेसमध्ये सेव्हिंग सुरू असताना 'Loading' स्टेट दाखवण्यासाठी.
+
+    १. registerAction: आपले बॅकएंड फंक्शन
+    २. { message: "" }: सुरुवातीची स्टेट (Initial State)
+    
+    const [state, formAction, isPending] = 
+    useActionState(registerAction,{status:null,message:""});
+
+    Project Repo :
+
+    app\UseActionState\page.jsx
+
 
 <hr />

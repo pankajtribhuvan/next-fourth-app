@@ -50,6 +50,15 @@ function Home(props) {
               Register Form
             </Link>
           </li>
+
+           <li>
+            <Link
+              href="/UseActionState"
+              className="bg-amber-300 px-4 py-2 block"
+            >
+              UseActionState - Register Form
+            </Link>
+          </li>
         </ul>
       </nav>
 
