@@ -82,4 +82,21 @@
 
 <hr />
 
+4. 404 - Not Found Page
 
+    just create not-found.jsx inside app route
+
+    app\not-found.jsx
+
+    Code it and done !!!
+
+    when user open any unknown root like below not-found page will open.
+    
+
+    http://localhost:3000/alsdkfjsldka
+
+    It will work for app/ routes and it's nested routes too.
+
+    http://localhost:3000/dynamic/sdf
+  
+<hr />
