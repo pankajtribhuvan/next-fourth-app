@@ -247,9 +247,9 @@
     we can't use above mysql queries in frontend - client component.
 
 <hr />
-8. UseActionState React 19 Hook 
+8. UseActionState React 19 Hook - Show Loading + Handle Form Response Easily in Next.js
      
-    useActionState हे एक नवीन React Hook आहे जे Server Actions सोबत काम करण्यासाठी डिझाइन केले आहे. हे तुम्हाला एकाच वेळी तीन महत्त्वाच्या गोष्टी पुरवते:
+    useActionState हे एक नवीन React Hook आहे जे Server Actions सोबत काम करण्यासाठी डिझाइन केले आहे. हे तुम्हाला एकाच वेळी तीन महत्त्वाच्या गोष्टी पुरवते: 
 
     State: सर्व्हरने पाठवलेला रिस्पॉन्स (उदा. Success/Error message).
 
@@ -267,5 +267,37 @@
 
     app\UseActionState\page.jsx
 
+
+<hr />
+
+9. useFormStatus - 
+
+  Example URL :
+
+  app\UseActionState\page.jsx
+  <hr>
+  
+  useFormStatus is a Hook that <u> gives you status information of the last form submission. </u>
+  We don't need to pass props to new componet , useFormstatus() remember the information of last form submission
+
+
+    const { pending, data, method, action } = useFormStatus();
+
+    <SubmitButton />
+    -------------
+       
+    const SubmitButton = ()=>{
+        const { pending, data, method, action } = useFormStatus();
+
+        return (
+            <button
+                        disabled={pending}
+                            type="submit"
+                            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-200 transition-all active:scale-[0.98] mt-4"
+                        >
+                            Register Student
+                        </button>
+        )
+    }
 
 <hr />
