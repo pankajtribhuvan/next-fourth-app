@@ -217,11 +217,33 @@
 
 <hr />
 
-6.  Data save in Mysql - Register Page.
-
+6.  Server Action - Without using events ,states => Data save in Mysql - Register Page.
+    
+    Server Action - we create new file server action to fetch from client component and save into database.
+    
     Repo Link :
 
     app\Register\page.jsx               => Front End
     app\Register\Register.action.jsx    => Backend Logic
+
+<hr />
+
+7.  Form Action -  we can get text fields data
+
+    Form Action -> 
+    
+    by calling the registerAction method in the same FrontEnd page - 
+    
+    we can see how easily we can get text fields data in below line , 
+    
+    no need to write document.getElement('') etc..
+    
+    No need to write seperate Register.action method i.e server action
+    
+    app\Register\page.jsx               => Front End
+
+    await db.execute(`insert into students(name,mobile,city) values(?,?,?)`,[name,mobile,city])
+    
+    we can't use above mysql queries in frontend - client component.
 
 <hr />
