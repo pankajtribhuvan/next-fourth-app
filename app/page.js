@@ -1,7 +1,16 @@
+'use client'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 function Home(props) {
+
+  const router = useRouter()
+
+  function useRouterDemo(){
+    router.push("/Register")
+  }
+
   return (
     <div>
       <h1 className='text-6xl text-center'>Client Vs Server Component in NEXT.js</h1>
@@ -51,7 +60,7 @@ function Home(props) {
             </Link>
           </li>
 
-           <li>
+          <li>
             <Link
               href="/UseActionState"
               className="bg-amber-300 px-4 py-2 block"
@@ -59,6 +68,14 @@ function Home(props) {
               UseActionState - Register Form
             </Link>
           </li>
+
+         <li>
+           
+           <button className='bg-red-400 p-2  w-max' onClick={useRouterDemo}>
+               useRouter Example</button>
+          </li>
+
+
         </ul>
       </nav>
 

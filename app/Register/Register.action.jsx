@@ -1,5 +1,6 @@
 // This is function - not a component
 'use server'
+
 import {db} from '@/config/db'
 export let registerAction = async (formData)=>{
     
@@ -12,5 +13,7 @@ export let registerAction = async (formData)=>{
     console.log(name,mobile,city)
 
     await db.execute(`insert into students(name,mobile,city) values(?,?,?)`,[name,mobile,city])
+    
+    
 
 }

@@ -301,3 +301,28 @@
     }
 
 <hr />
+
+10.     Redirect function in Nextjs application
+
+        Only works in SERVER COMPONENTS.
+        Below package help for this.
+        import { redirect } from 'next/navigation'
+
+
+        Code Link :
+            
+            app\UseActionState\Register.action.jsx
+
+<hr />
+11.     useRouter - navigate programmitically in next js.
+
+        Below package help for this.
+
+        import { useRouter } from 'next/navigation';
+
+        function useRouterDemo(){
+            router.push("/Register")
+        }
+
+<hr />
+

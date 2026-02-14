@@ -11,7 +11,7 @@ export let registerAction = async (formData)=>{
     const {name,mobile,city} = Object.fromEntries(formData.entries())
 
     console.log(name,mobile,city)
-
+    
     // await db.execute(`insert into students(name,mobile,city) values(?,?,?)`,[name,mobile,city])
     // we can't use above mysql queries in frontend - client component.
 }
