@@ -1,7 +1,10 @@
+'use client'
 // app/not-found.js
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 export default function NotFound() {
+  const router = useRouter();
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-950 px-6">
       <div className="relative w-full max-w-lg text-center">
@@ -21,18 +24,17 @@ export default function NotFound() {
           </p>
           
           <div className="flex gap-4 mt-6">
+           <button className="px-8 py-3 bg-green-500 hover:bg-green-400 text-slate-950 font-semibold rounded-full transition-all active:scale-95"
+           onClick={()=> router.back()}>
+            Go Back 
+            </button> 
             <Link 
               href="/"
               className="px-8 py-3 bg-green-500 hover:bg-green-400 text-slate-950 font-semibold rounded-full transition-all active:scale-95"
             >
               Go Home
             </Link>
-            <Link 
-              href="/CacheDemo"
-              className="px-8 py-3 border border-slate-700 hover:border-slate-500 text-white font-semibold rounded-full transition-all"
-            >
-              View Students
-            </Link>
+            
           </div>
         </div>
       </div>

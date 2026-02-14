@@ -305,6 +305,7 @@
 10.     Redirect function in Nextjs application
 
         Only works in SERVER COMPONENTS.
+
         Below package help for this.
         import { redirect } from 'next/navigation'
 
@@ -323,6 +324,23 @@
         function useRouterDemo(){
             router.push("/Register")
         }
+        -----------------------
+        Same we can make Back button with following in not-found page.
+        Back button - send last page we visited.
+
+        router.back()
+        router.forward()
+
+        <button className="px-8 py-3 bg-green-500 hover:bg-green-400 text-slate-950 font-semibold rounded-full transition-all active:scale-95"
+        onClick={()=> router.back()}>
+        
+        Go Back 
+        
+        </button> 
+
+        Example Dir :    
+
+        app\not-found.jsx
 
 <hr />
 
